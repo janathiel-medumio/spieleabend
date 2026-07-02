@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ein Abend wie aus alten Zeiten</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at center, #3a2f28 0%, #1c1512 100%);
+    font-family: 'Cormorant Garamond', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+  }
+  .karte {
+    max-width: 620px;
+    width: 100%;
+    background:
+      radial-gradient(circle at 20% 10%, rgba(139,58,58,0.05), transparent 40%),
+      linear-gradient(#f4ecd8, #e9dcc0);
+    border: 1px solid #b89b6a;
+    outline: 1px solid #3a2f28;
+    outline-offset: 6px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    padding: 56px 44px;
+    position: relative;
+    color: #3e2723;
+  }
+  .karte::before {
+    content: "";
+    position: absolute;
+    inset: 14px;
+    border: 1px solid #b89b6a;
+    pointer-events: none;
+  }
+  .zierlinie {
+    text-align: center;
+    color: #8b3a3a;
+    font-size: 22px;
+    letter-spacing: 8px;
+    margin: 0 0 8px;
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 0 0 4px;
+    color: #2c211b;
+  }
+  .untertitel {
+    text-align: center;
+    font-style: italic;
+    color: #7a5c3e;
+    margin-bottom: 28px;
+    font-size: 1.15rem;
+  }
+  .trenner {
+    text-align: center;
+    color: #b89b6a;
+    margin: 24px 0;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+  }
+  p.text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    text-align: center;
+    margin: 0 auto 24px;
+    max-width: 480px;
+    color: #4a3728;
+  }
+  .details {
+    text-align: center;
+    font-size: 1.15rem;
+    margin: 28px 0;
+    line-height: 2;
+    color: #3e2723;
+  }
+  .details strong {
+    color: #8b3a3a;
+    font-weight: 600;
+  }
+  .signatur {
+    text-align: center;
+    font-style: italic;
+    margin: 32px 0 8px;
+    font-size: 1.2rem;
+    color: #5a4632;
+  }
+  .cta-wrapper {
+    text-align: center;
+    margin-top: 36px;
+  }
+  .cta {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #f4ecd8;
+    background: #6e2b2b;
+    padding: 14px 38px;
+    border-radius: 2px;
+    text-decoration: none;
+    border: 1px solid #4a1c1c;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    letter-spacing: 1px;
+  }
+  .cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.45);
+  }
+  .hinweis {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 0.95rem;
+    color: #8a7860;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+  <div class="karte">
+    <p class="zierlinie">&#10088; &#8226; &#10089;</p>
+    <h1>Ein Abend wie aus alten Zeiten</h1>
+    <p class="untertitel">— eine Einladung zum Träumen, Spielen und Schwelgen —</p>
+
+    <p class="text">
+      Es war einmal eine Zeit, in der Abende länger dauerten,
+      Gespräche tiefer gingen und ein Spiel bei Kerzenschein
+      mehr war als Zeitvertreib. Zu genau solch einem Abend
+      lade ich dich herzlich ein.
+    </p>
+
+    <div class="trenner">&#10022; &#10022; &#10022;</div>
+
+    <div class="details">
+      <strong>Wann:</strong> [DATUM], [UHRZEIT]<br>
+      <strong>Wo:</strong> [ORT]
+    </div>
+
+    <p class="text">
+      Bring nichts weiter mit als deine gute Laune und
+      etwas Lust auf alte Spiele, gute Gesellschaft und
+      ein Fünkchen Nostalgie.
+    </p>
+
+    <p class="signatur">In alter Verbundenheit,<br>[DEIN NAME]</p>
+
+    <div class="cta-wrapper">
+      <a class="cta" href="mailto:[DEINE-EMAIL]?subject=Ich%20komme%20zum%20Spieleabend!&body=Liebe%2Fr%20[DEIN%20NAME]%2C%0A%0Aich%20komme%20herzlich%20gerne%20zum%20Spieleabend!%0A%0AWir%20werden%20zu%20___%20Person(en)%20sein.%0A%0AViele%20Grüße">
+        Ich komme! &#9829;
+      </a>
+    </div>
+    <p class="hinweis">ein Klick öffnet eine vorausgefüllte E-Mail an dich</p>
+  </div>
+</body>
+</html>
